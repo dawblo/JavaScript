@@ -15,7 +15,7 @@ $( document ).ready(function() {
 	    "crossDomain": true,
         "headers": {
             "x-rapidapi-host": "covid-19-data.p.rapidapi.com",
-            "x-rapidapi-key": "0eaf85e90emsh909fe7c567d4f04p10bad1jsne26460938022",
+            "x-rapidapi-key": "YOUR API KEY",
         },
         url: ENDPOINT + 'country?name=' + $('#country-name').val() +
          '&date=' + + $('#date').val(),
