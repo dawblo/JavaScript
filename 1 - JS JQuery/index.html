@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pl">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+ <link rel="stylesheet" href="style.css">
+ <title>Prognoza pogody - przykład</title>
+</head>
+<body>
+    
+
+
+<div class="container">
+ <!-- section title -->
+
+ <div class="row mt-3">
+ <div class="col-12 text-center">
+ <h1>Prognoza pogody</h1>
+ </div>
+ </div>
+ <!-- section country name -->
+ <div class="row mt-3">
+ <div class="col-12">
+ <div class="input-group">
+
+
+ <input id="country-name" type="text" class="form-control" placeholder="Proszę
+wprowadzić nazwę miasta...">
+
+
+<input id="date" type="text" class="form-control" placeholder="Proszę wprowadzić datę...soon">
+ <div class="input-group-append">
+
+
+ <button id="check-weather" class="btn btn-primary"
+type="button">Sprawdź pogodę</button>
+ </div>
+ </div>
+
+ 
+ <span id="country-name-validation" class="validation-message">
+ Proszę wprowadzić nazwę miasta...
+ </span>
+
+ <span id="date-validation" class="validation-message">
+    Proszę wprowadzić datę...
+    </span>
+
+ </div>
+ </div>
+ <!-- section weather forecast list -->
+ <div class="row mt-3">
+ <div class="col-12">
+ <div class="list-group weather">
+ </div>
+ </div>
+ </div>
+ <div id="loader" class="lds-dual-ring d-none overlay"></div>
+</div>
+
+<script src=vendor/jquery/jquery-3.6.0.min.js></script>
+
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
